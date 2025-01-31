@@ -1,0 +1,15 @@
+sigma_min: 0.0005
+sigma_max: 20.0
+rho: 3.0
+n_diffusion_steps: 1000
+
+n_instruments: 4
+len_chunk: 262144  # 2**18 
+
+# used for playing sounds with from IPython.display import Audio
+# used also in the experiments
+sample_rate: 22050
+
+# put the absolute path of ffhq model weights
+# either darkness or glorious
+model_path: # XXX Change path

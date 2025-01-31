@@ -1,0 +1,68 @@
+name: mgdm
+nsteps: 100
+nsamples: 1
+
+parameters:
+  n_reps: 1
+  n_denoising_steps: 20
+  eta: 1.
+  tau_sampling: mix
+  threshold: 70
+  min_tau: 10
+  gradient_steps_fn:
+    conditions:
+      - condition: "i >= n_steps - 10"
+        return: 20
+      - condition: "default"
+        return: 3
+  lr_fn:
+    conditions:
+      - condition: "i <= 10"
+        return: 0.01
+      - condition: "default"
+        return: 0.03
+
+
+context_parameters: 
+  dataset: 
+    ffhq_ldm: 
+      gradient_steps_fn:
+        conditions:
+          - condition: "i >= n_steps - 30"
+            return: 20
+          - condition: "i % 10 == 0"
+            return: 20 
+          - condition: "default"
+            return: 3
+      lr_fn:
+        conditions:
+          - condition: "i <= 10"
+            return: 0.01
+          - condition: "default"
+            return: 0.03
+
+    ffhq: 
+      gradient_steps_fn:
+        conditions:
+          - condition: "i >= n_steps - 30"
+            return: 20
+          - condition: "default"
+            return: 5
+      lr_fn:
+        conditions:
+          - condition: "i <= 10"
+            return: 0.01
+          - condition: "default"
+            return: 0.03
+
+    imagenet: 
+      gradient_steps_fn:
+        conditions:
+          - condition: "i >= n_steps - 30"
+            return: 20
+          - condition: "default"
+            return: 5
+      lr_fn:
+        conditions:
+          - condition: "default"
+            return: 0.03

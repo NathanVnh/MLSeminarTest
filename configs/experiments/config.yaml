@@ -1,0 +1,13 @@
+defaults:
+  - sampler: mgdm
+
+dataset: ffhq
+task: sr4
+std: 0.05
+nsamples: 1
+
+save_folder : "reconstructions/${dataset}/${task}"
+data_folder: "assets"
+device: "cuda:0"
+
+im_idx: "00018"

@@ -1,0 +1,24 @@
+defaults:
+  - sampler: mgdm
+
+dataset: sound_models
+task: separation
+std: 0.0001
+track_name: Track02098
+chunk_idx: 3
+device: "cuda:1"
+
+save_folder : reconstructions
+
+data:
+  sample_rate: 22050
+  chunk_size: 262144
+  silence_threshold: null
+  keep_only_multisource: False
+  sample_eps_in_sec: 0.1
+  data_dir: ./assets/tracks
+  stem_names:
+    - "bass"
+    - "drums"
+    - "guitar"
+    - "piano"
