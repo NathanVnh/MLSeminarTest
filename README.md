@@ -1,5 +1,7 @@
 # A Mixture-Based Framework for Guiding Diffusion Models
 
+[**Paper**](https://arxiv.org/abs/2502.03332) | [**Demo**](https://badr-moufad.github.io/mgdm/)
+
 Code of MGDM algorithm.
 Here, we provide the code to run image experiments and audio-source separation.
 
