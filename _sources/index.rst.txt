@@ -13,7 +13,7 @@ Audio separation on ``Slakh2100`` dataset
 ``MGDM`` can be used to separate sources given a mixture audio.
 We showcase that on ``Slakh2100`` `test dataset <http://www.slakh.com>`_. 
 
-Here, we provide several samplew tracks, where
+Here, we provide several samples tracks, where
 
 - **Input** is the mixture sound that is given to the algorithm 
 - **Bass**, **Drums**, **Guitar**, and **Piano** are the outputs of the algorithm 
@@ -244,7 +244,7 @@ Cite
 
 .. code-block:: bibtex
     
-    @article{yazid2025mgdm,
+    @article{janati2025mgdm,
         title  ={A Mixture-Based Framework for Guiding Diffusion Models},
         author ={Janati, Yazid and Moufad, Badr and Abou El Qassim, Mehdi and 
                  Durmus, Alain and Moulines, Eric and Olsson, Jimmy},
