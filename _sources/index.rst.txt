@@ -1,0 +1,269 @@
+==================
+``MGDM`` Algorithm
+==================
+*— A Mixture-Based Framework for Guiding Diffusion Models —*
+
+--------
+
+
+
+Audio separation on ``Slakh2100`` dataset
+-----------------------------------------
+
+``MGDM`` can be used to separate sources given a mixture audio.
+We showcase that on ``Slakh2100`` `test dataset <http://www.slakh.com>`_. 
+
+Here, we provide several samplew tracks, where
+
+- **Input** is the mixture sound that is given to the algorithm 
+- **Bass**, **Drums**, **Guitar**, and **Piano** are the outputs of the algorithm 
+
+
+
+.. --------------
+
+.. list-table:: Track01876 (00:11 - 00:44)
+    :widths: 20 80
+
+    * - **Input**
+      - .. raw:: html
+
+            <audio controls="controls">
+            <source src="_static/samples_audio/Track01876/input.wav" type="audio/wav">
+            Your browser does not support the <code>audio</code> element. 
+            </audio>
+    * - **Bass**
+      - .. raw:: html
+
+            <audio controls="controls">
+            <source src="_static/samples_audio/Track01876/bass.wav" type="audio/wav">
+            Your browser does not support the <code>audio</code> element. 
+            </audio>
+    * - **Drums**
+      - .. raw:: html
+
+            <audio controls="controls">
+            <source src="_static/samples_audio/Track01876/drums.wav" type="audio/wav">
+            Your browser does not support the <code>audio</code> element. 
+            </audio>
+    * - **Guitar**
+      - .. raw:: html
+
+            <audio controls="controls">
+            <source src="_static/samples_audio/Track01876/guitar.wav" type="audio/wav">
+            Your browser does not support the <code>audio</code> element. 
+            </audio>
+    * - **Piano**
+      - .. raw:: html
+
+            <audio controls="controls">
+            <source src="_static/samples_audio/Track01876/piano.wav" type="audio/wav">
+            Your browser does not support the <code>audio</code> element. 
+            </audio>
+
+.. --------------
+
+
+.. --------------
+
+.. list-table:: Track01877 (01:17 - 01:50)
+    :widths: 20 80
+
+    * - **Input**
+      - .. raw:: html
+
+            <audio controls="controls">
+            <source src="_static/samples_audio/Track01877/input.wav" type="audio/wav">
+            Your browser does not support the <code>audio</code> element. 
+            </audio>
+    * - **Bass**
+      - .. raw:: html
+
+            <audio controls="controls">
+            <source src="_static/samples_audio/Track01877/bass.wav" type="audio/wav">
+            Your browser does not support the <code>audio</code> element. 
+            </audio>
+    * - **Drums**
+      - .. raw:: html
+
+            <audio controls="controls">
+            <source src="_static/samples_audio/Track01877/drums.wav" type="audio/wav">
+            Your browser does not support the <code>audio</code> element. 
+            </audio>
+    * - **Guitar**
+      - .. raw:: html
+
+            <audio controls="controls">
+            <source src="_static/samples_audio/Track01877/guitar.wav" type="audio/wav">
+            Your browser does not support the <code>audio</code> element. 
+            </audio>
+    * - **Piano**
+      - .. raw:: html
+
+            <audio controls="controls">
+            <source src="_static/samples_audio/Track01877/piano.wav" type="audio/wav">
+            Your browser does not support the <code>audio</code> element. 
+            </audio>
+
+.. --------------
+
+
+.. --------------
+
+.. list-table:: Track01884 (02:56 - 03:29)
+    :widths: 20 80
+
+    * - **Input**
+      - .. raw:: html
+
+            <audio controls="controls">
+            <source src="_static/samples_audio/Track01884/input.wav" type="audio/wav">
+            Your browser does not support the <code>audio</code> element. 
+            </audio>
+    * - **Bass**
+      - .. raw:: html
+
+            <audio controls="controls">
+            <source src="_static/samples_audio/Track01884/bass.wav" type="audio/wav">
+            Your browser does not support the <code>audio</code> element. 
+            </audio>
+    * - **Drums**
+      - .. raw:: html
+
+            <audio controls="controls">
+            <source src="_static/samples_audio/Track01884/drums.wav" type="audio/wav">
+            Your browser does not support the <code>audio</code> element. 
+            </audio>
+    * - **Guitar**
+      - .. raw:: html
+
+            <audio controls="controls">
+            <source src="_static/samples_audio/Track01884/guitar.wav" type="audio/wav">
+            Your browser does not support the <code>audio</code> element. 
+            </audio>
+    * - **Piano**
+      - .. raw:: html
+
+            <audio controls="controls">
+            <source src="_static/samples_audio/Track01884/piano.wav" type="audio/wav">
+            Your browser does not support the <code>audio</code> element. 
+            </audio>
+
+.. --------------
+
+
+.. --------------
+
+.. list-table:: Track02005 (01:06 - 01:39)
+    :widths: 20 80
+
+    * - **Input**
+      - .. raw:: html
+
+            <audio controls="controls">
+            <source src="_static/samples_audio/Track02005/input.wav" type="audio/wav">
+            Your browser does not support the <code>audio</code> element. 
+            </audio>
+    * - **Bass**
+      - .. raw:: html
+
+            <audio controls="controls">
+            <source src="_static/samples_audio/Track02005/bass.wav" type="audio/wav">
+            Your browser does not support the <code>audio</code> element. 
+            </audio>
+    * - **Drums**
+      - .. raw:: html
+
+            <audio controls="controls">
+            <source src="_static/samples_audio/Track02005/drums.wav" type="audio/wav">
+            Your browser does not support the <code>audio</code> element. 
+            </audio>
+    * - **Guitar**
+      - .. raw:: html
+
+            <audio controls="controls">
+            <source src="_static/samples_audio/Track02005/guitar.wav" type="audio/wav">
+            Your browser does not support the <code>audio</code> element. 
+            </audio>
+    * - **Piano**
+      - .. raw:: html
+
+            <audio controls="controls">
+            <source src="_static/samples_audio/Track02005/piano.wav" type="audio/wav">
+            Your browser does not support the <code>audio</code> element. 
+            </audio>
+
+.. --------------
+
+.. list-table:: Track02084 (02:12 - 02:45)
+    :widths: 20 80
+
+    * - **Input**
+      - .. raw:: html
+
+            <audio controls="controls">
+            <source src="_static/samples_audio/Track02084/input.wav" type="audio/wav">
+            Your browser does not support the <code>audio</code> element. 
+            </audio>
+    * - **Bass**
+      - .. raw:: html
+
+            <audio controls="controls">
+            <source src="_static/samples_audio/Track02084/bass.wav" type="audio/wav">
+            Your browser does not support the <code>audio</code> element. 
+            </audio>
+    * - **Drums**
+      - .. raw:: html
+
+            <audio controls="controls">
+            <source src="_static/samples_audio/Track02084/drums.wav" type="audio/wav">
+            Your browser does not support the <code>audio</code> element. 
+            </audio>
+    * - **Guitar**
+      - .. raw:: html
+
+            <audio controls="controls">
+            <source src="_static/samples_audio/Track02084/guitar.wav" type="audio/wav">
+            Your browser does not support the <code>audio</code> element. 
+            </audio>
+    * - **Piano**
+      - .. raw:: html
+
+            <audio controls="controls">
+            <source src="_static/samples_audio/Track02084/piano.wav" type="audio/wav">
+            Your browser does not support the <code>audio</code> element. 
+            </audio>
+
+.. --------------
+
+
+Cite
+----
+
+``MGDM`` is part of a series of publications that explore training-free approach to guide pre-trained diffusion models.
+
+.. code-block:: bibtex
+    
+    @article{yazid2025mgdm,
+        title  ={A Mixture-Based Framework for Guiding Diffusion Models},
+        author ={Janati, Yazid and Moufad, Badr and Abou El Qassim, Mehdi and 
+                 Durmus, Alain and Moulines, Eric and Olsson, Jimmy},
+        journal={preprint},
+        year   ={2025}
+    }
+    
+    @article{moufad2025mgps,
+        title  ={Variational Diffusion Posterior Sampling with Midpoint Guidance},
+        author ={Moufad, Badr and Janati, Yazid and Bedin, Lisa and 
+                 Durmus, Alain and Douc, Randal and Moulines, Eric and Olsson, Jimmy},
+        journal={ICLR},
+        year   ={2025}
+    }
+    
+    @inproceedings{janati2024dcps,
+        title    ={Divide-and-Conquer Posterior Sampling for Denoising Diffusion Priors},
+        author   ={Janati, Yazid and Moufad, Badr and Durmus, Alain and
+                   Moulines, Eric and Olsson, Jimmy},
+        booktitle={Neurips},
+        year     ={2024}
+    }
