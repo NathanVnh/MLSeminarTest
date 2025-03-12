@@ -20,4 +20,4 @@ use_fp16: False
 use_new_attention_order: False
 
 # put the absolute path of ffhq model weights
-model_path: # XXX Change path
+model_path: "/home/onyxia/work/mgdm/model_weight/ffhq_10m.pt" # XXX Change path
